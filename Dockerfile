@@ -25,9 +25,8 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 # Place executables in the environment at the front of the path
 ENV PATH="/app/.venv/bin:$PATH"
 
-# Set port to 8080 as required by Smithery proxy
-ENV PORT=8080
-EXPOSE 8080
+# Set port
+ENV PORT=8081
 
 # Reset the entrypoint, don't invoke `uv`
 ENTRYPOINT []
